@@ -16,7 +16,7 @@ public class GreetingServiceConfig {
     @Bean
     FakeDataSource fakeDataSource(@Value("${guru.username}") String userName,
                                   @Value("${guru.password}") String password,
-                                  @Value("${guru.jdbcUrl}") String url) {
+                                  @Value("${guru.jdbcurl}") String url) {
 
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(userName);
